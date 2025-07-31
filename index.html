@@ -13,69 +13,117 @@
 <body>
   <main>
     <section id="hero">
-      <h1>Hi, I'm Pauline :)</h1>
-      <h2 class="text-h4">UX Engineer</h2>
-      <p class="text-h6">I design and develop front-end solutions that turn complex requirements into intuitive, user-friendly experiences that are powered by scalable well-crafted design systems.</p>
-      <button class="primary">View resume</button>
-    </section>
-    <section id="skills">
-      <h2 class="text-h4">Skills</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-      <ul class="skill-list">
-        <li class="skill">
-          <span class="skill-label">Javascript</span>
-          <span class="skill-label">Javascript</span>
-          <span class="skill-label">Javascript</span>
-          <span class="skill-label">Javascript</span>
-          <span class="skill-label">Javascript</span>
-          <span class="skill-label">Javascript</span>
-          <span class="skill-label">Javascript</span>
-        </li>
-      </ul>
+      <div class="profile__container">
+        <div class="profile__image">
+          <span class="profile__image-wrapper">
+            <img src="headshot.png" alt="Headshot" width="248" height="248" />
+          </span>
+        </div>
+        <div class="profile__content">
+          <h1 class="profile__title">Hi, I'm Pauline :)</h1>
+          <h2 class="profile__subtitle text-h4">UX Engineer</h2>
+          <p class="profile__description text-h6">I design and develop front-end solutions that turn complex requirements into intuitive, user-friendly experiences that are powered by scalable well-crafted design systems.</p>
+          <button class="hero__cta button--primary button--with-icon">
+            <span class="button__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="currentColor">
+                <path fill="currentColor" d="M11.166 2.5a.833.833 0 0 0-1.666 0v7.988L6.755 7.744a.833.833 0 0 0-1.178 1.179l4.167 4.166a.833.833 0 0 0 1.178 0l4.167-4.166a.833.833 0 0 0-1.179-1.179l-2.744 2.744V2.5Z"/>
+                <path fill="currentColor" d="M2.833 11.667c.46 0 .833.373.833.833v3.333a.833.833 0 0 0 .834.834h11.666a.833.833 0 0 0 .834-.834V12.5a.833.833 0 0 1 1.666 0v3.333a2.5 2.5 0 0 1-2.5 2.5H4.5a2.5 2.5 0 0 1-2.5-2.5V12.5c0-.46.373-.833.833-.833Z"/>
+              </svg>
+            </span>
+            <span class="button__label">
+              View resume
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="skills__container">
+        <h2 class="skills__title section__title text-h4">Skills</h2>
+        <ul class="skill__list">
+          <li class="skill__item">
+            <span class="skill--javascript skill__label">Javascript</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--typescript skill__label">Typescript</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--react skill__label">React</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--node skill__label">Node.js</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--tailwind skill__label">TailwindCSS</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--nextjs skill__label">Next.js</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--prisma skill__label">Prisma</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--figma skill__label">Figma</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--design-systems skill__label">Design Systems</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--storybook skill__label">Storybook</span>
+          </li>
+          <li class="skill__item">
+            <span class="skill--mui skill__label">Material UI</span>
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="portfolio">
-      <h2 class="text-h4">Portfolio</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-      <ul>
-        <li>
-          <article>
-            <img />
-            <h3 class="text-h6">Walkr, the Dog Walking App</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-            <a>View prototype</a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img />
-            <h3 class="text-h6">Book Reader</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-            <a>View prototype</a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img />
-            <h3 class="text-h6">KanaBuddy, the Kana Typing App</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-            <a>View prototype</a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img />
-            <h3 class="text-h6">Wedding Website</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-            <a>View prototype</a>
-          </article>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="text-h4">Portfolio</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+        <ul>
+          <li>
+            <article>
+              <img />
+              <h3 class="text-h6">Walkr, the Dog Walking App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+              <a>View prototype</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img />
+              <h3 class="text-h6">Book Reader</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+              <a>View prototype</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img />
+              <h3 class="text-h6">KanaBuddy, the Kana Typing App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+              <a>View prototype</a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img />
+              <h3 class="text-h6">Wedding Website</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+              <a>View prototype</a>
+            </article>
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="codepen">
-      <h2 class="text-h4">CodePen Exercises</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+      <div class="container">
+        <h2 class="text-h4">CodePen Exercises</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+      </div>
     </section>
-    <button class="outline small">Back to top</button>
+    <div class="scroll__wrapper">
+      <button class="scroll__button button--outline button--small">Back to top</button>
+    </div>
   </main>
 </body>
 </html>
