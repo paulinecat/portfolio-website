@@ -23,7 +23,7 @@
           <h1 class="profile__title">Hi, I'm Pauline :)</h1>
           <h2 class="profile__subtitle text-h4">UX Engineer</h2>
           <p class="profile__description text-h6">I design and develop front-end solutions that turn complex requirements into intuitive, user-friendly experiences that are powered by scalable well-crafted design systems.</p>
-          <button class="hero__cta button--primary button--with-icon">
+          <button class="profile__cta button--primary button--with-icon">
             <span class="button__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="currentColor">
                 <path fill="currentColor" d="M11.166 2.5a.833.833 0 0 0-1.666 0v7.988L6.755 7.744a.833.833 0 0 0-1.178 1.179l4.167 4.166a.833.833 0 0 0 1.178 0l4.167-4.166a.833.833 0 0 0-1.179-1.179l-2.744 2.744V2.5Z"/>
@@ -36,8 +36,8 @@
           </button>
         </div>
       </div>
-      <div class="skills__container">
-        <h2 class="skills__title section__title text-h4">Skills</h2>
+      <div class="skill__container">
+        <h2 class="skill__title text-h4">Skills</h2>
         <ul class="skill__list">
           <li class="skill__item">
             <span class="skill--javascript skill__label">Javascript</span>
@@ -76,49 +76,160 @@
       </div>
     </section>
     <section id="portfolio">
-      <div class="container">
-        <h2 class="text-h4">Portfolio</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-        <ul>
-          <li>
-            <article>
-              <img />
-              <h3 class="text-h6">Walkr, the Dog Walking App</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-              <a>View prototype</a>
+      <div class="portfolio__container">
+        <h2 class="portfolio__title section__title text-h4">Portfolio</h2>
+        <p class="portfolio__description section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <article class="portfolioitem__article">
+              <div class="portfolioitem__image">
+                <img src="img-walkr-app.png" width="520" height="352" alt="Walkr, the dog walking app" />
+              </div>
+              <div class="portfolioitem__info">
+                <h3 class="portfolioitem__title text-h6">Walkr, the Dog Walking App</h3>
+                <p class="portfolioitem__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+                <a class="portfolioitem__link link" href="https://www.figma.com/design/9BYVCcGyVnxgFbChDzNgOm/Walkr-App?node-id=0-1&t=EsOuPxyriNC863Ba-1" target="_blank">
+                  <span class="link__label">
+                    View prototype
+                  </span>
+                  <span class="link__icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.52843 2.86192C7.78878 2.60157 8.21089 2.60157 8.47124 2.86192L13.1379 7.52858C13.3983 7.78893 13.3983 8.21104 13.1379 8.47139L8.47124 13.1381C8.21089 13.3984 7.78878 13.3984 7.52843 13.1381C7.26808 12.8777 7.26808 12.4556 7.52843 12.1953L11.057 8.66666H3.33317C2.96498 8.66666 2.6665 8.36818 2.6665 7.99999C2.6665 7.6318 2.96498 7.33332 3.33317 7.33332H11.057L7.52843 3.80473C7.26808 3.54438 7.26808 3.12227 7.52843 2.86192Z" fill="currentColor"/>
+                    </svg>
+                </a>
+              </div>
             </article>
           </li>
-          <li>
-            <article>
-              <img />
-              <h3 class="text-h6">Book Reader</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-              <a>View prototype</a>
+          <li class="portfolio__item">
+            <article class="portfolioitem__article">
+              <div class="portfolioitem__image">
+                <img src="img-orv-reader.png" width="520" height="320" alt="Book reader app" />
+              </div>
+              <div class="portfolioitem__info">
+                <h3 class="portfolioitem__title text-h6">Book E-Reader</h3>
+                <p class="portfolioitem__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+                <a class="portfolioitem__link link" href="https://www.figma.com/proto/g7fw9mx9211tL7RPb04KfD/ORV-Reader?page-id=&node-id=45-24&viewport=-302%2C258%2C0.26&t=LbUDKN514aHdCs53-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=17%3A2" target="_blank">
+                  <span class="link__label">
+                    View prototype
+                  </span>
+                  <span class="link__icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.52843 2.86192C7.78878 2.60157 8.21089 2.60157 8.47124 2.86192L13.1379 7.52858C13.3983 7.78893 13.3983 8.21104 13.1379 8.47139L8.47124 13.1381C8.21089 13.3984 7.78878 13.3984 7.52843 13.1381C7.26808 12.8777 7.26808 12.4556 7.52843 12.1953L11.057 8.66666H3.33317C2.96498 8.66666 2.6665 8.36818 2.6665 7.99999C2.6665 7.6318 2.96498 7.33332 3.33317 7.33332H11.057L7.52843 3.80473C7.26808 3.54438 7.26808 3.12227 7.52843 2.86192Z" fill="currentColor"/>
+                    </svg>
+                </a>
+              </div>
             </article>
           </li>
-          <li>
-            <article>
-              <img />
-              <h3 class="text-h6">KanaBuddy, the Kana Typing App</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-              <a>View prototype</a>
+          <li class="portfolio__item">
+            <article class="portfolioitem__article">
+              <div class="portfolioitem__image">
+                <img src="img-kana-buddy.png" width="520" height="320" alt="KanaBuddy, the kana typing practice" />
+              </div>
+              <div class="portfolioitem__info">
+                <h3 class="portfolioitem__title text-h6">KanaBuddy</h3>
+                <p class="portfolioitem__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+                <a class="portfolioitem__link link" href="https://www.figma.com/proto/o1VhfkPjGhakGMbSTFhHoG/KanaBuddyApp?page-id=145%3A1019&node-id=673-15704&viewport=366%2C456%2C0.26&t=ySe7jEpq5BPTYZBV-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=673%3A15704" target="_blank">
+                  <span class="link__label">
+                    View prototype
+                  </span>
+                  <span class="link__icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.52843 2.86192C7.78878 2.60157 8.21089 2.60157 8.47124 2.86192L13.1379 7.52858C13.3983 7.78893 13.3983 8.21104 13.1379 8.47139L8.47124 13.1381C8.21089 13.3984 7.78878 13.3984 7.52843 13.1381C7.26808 12.8777 7.26808 12.4556 7.52843 12.1953L11.057 8.66666H3.33317C2.96498 8.66666 2.6665 8.36818 2.6665 7.99999C2.6665 7.6318 2.96498 7.33332 3.33317 7.33332H11.057L7.52843 3.80473C7.26808 3.54438 7.26808 3.12227 7.52843 2.86192Z" fill="currentColor"/>
+                    </svg>
+                </a>
+              </div>
             </article>
           </li>
-          <li>
-            <article>
-              <img />
-              <h3 class="text-h6">Wedding Website</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
-              <a>View prototype</a>
+          <li class="portfolio__item">
+            <article class="portfolioitem__article">
+              <div class="portfolioitem__image">
+                <img src="img-wedding-website.png" width="520" height="320" alt="2020 Wedding Website" />
+              </div>
+              <div class="portfolioitem__info">
+                <h3 class="portfolioitem__title text-h6">2020 Wedding Website</h3>
+                <p class="portfolioitem__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+                <a class="portfolioitem__link link" href="https://www.figma.com/proto/CfDPS2F5YM0lI2TtLrtfM2/2020-Wedding-Website?page-id=0%3A1&node-id=1-3&p=f&viewport=485%2C762%2C0.32&t=wcMHEX0F4CuxgOkf-1&scaling=min-zoom&content-scaling=fixed" target="_blank">
+                  <span class="link__label">
+                    View prototype
+                  </span>
+                  <span class="link__icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.52843 2.86192C7.78878 2.60157 8.21089 2.60157 8.47124 2.86192L13.1379 7.52858C13.3983 7.78893 13.3983 8.21104 13.1379 8.47139L8.47124 13.1381C8.21089 13.3984 7.78878 13.3984 7.52843 13.1381C7.26808 12.8777 7.26808 12.4556 7.52843 12.1953L11.057 8.66666H3.33317C2.96498 8.66666 2.6665 8.36818 2.6665 7.99999C2.6665 7.6318 2.96498 7.33332 3.33317 7.33332H11.057L7.52843 3.80473C7.26808 3.54438 7.26808 3.12227 7.52843 2.86192Z" fill="currentColor"/>
+                    </svg>
+                </a>
+              </div>
             </article>
           </li>
+
         </ul>
       </div>
     </section>
     <section id="codepen">
-      <div class="container">
-        <h2 class="text-h4">CodePen Exercises</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+      <div class="codepen__container">
+        <h2 class="codepen__title section__title text-h4">CodePen Prototypes</h2>
+        <p class="codepen__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+        <ul class="codepen__list">
+          <li class="codepen__item">
+            <article class="codepenitem__article">
+              <div class="codepenitem__image">
+                <img src="img-heatmap.png" width="360" height="252" alt="Heatmap calendar"/>
+              </div>
+              <div class="codepenitem__info">
+                <h3 class="codepenitem__title text-h6">Heatmap Calendar</h3>
+                <p class="codepenitem__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+                <a class="codepenitem__link link" href="https://codepen.io/paulinecat/pen/LYarjQL" target="_blank">
+                  <span class="link__label">
+                    View pen
+                  </span>
+                  <span class="link__icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.52843 2.86192C7.78878 2.60157 8.21089 2.60157 8.47124 2.86192L13.1379 7.52858C13.3983 7.78893 13.3983 8.21104 13.1379 8.47139L8.47124 13.1381C8.21089 13.3984 7.78878 13.3984 7.52843 13.1381C7.26808 12.8777 7.26808 12.4556 7.52843 12.1953L11.057 8.66666H3.33317C2.96498 8.66666 2.6665 8.36818 2.6665 7.99999C2.6665 7.6318 2.96498 7.33332 3.33317 7.33332H11.057L7.52843 3.80473C7.26808 3.54438 7.26808 3.12227 7.52843 2.86192Z" fill="currentColor"/>
+                    </svg>
+                </a>
+              </div>
+            </article>
+          </li>
+          <li class="codepen__item">
+            <article class="codepenitem__article">
+              <div class="codepenitem__image">
+                <img src="img-micro-interactions.png" width="360" height="317" alt="Icon micro-interactions"/>
+              </div>
+              <div class="codepenitem__info">
+                <h3 class="codepenitem__title text-h6">Icon Micro-interactions</h3>
+                <p class="codepenitem__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+                <a class="codepenitem__link link" href="https://codepen.io/paulinecat/pen/LYarjQL" target="_blank">
+                  <span class="link__label">
+                    View pen
+                  </span>
+                  <span class="link__icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.52843 2.86192C7.78878 2.60157 8.21089 2.60157 8.47124 2.86192L13.1379 7.52858C13.3983 7.78893 13.3983 8.21104 13.1379 8.47139L8.47124 13.1381C8.21089 13.3984 7.78878 13.3984 7.52843 13.1381C7.26808 12.8777 7.26808 12.4556 7.52843 12.1953L11.057 8.66666H3.33317C2.96498 8.66666 2.6665 8.36818 2.6665 7.99999C2.6665 7.6318 2.96498 7.33332 3.33317 7.33332H11.057L7.52843 3.80473C7.26808 3.54438 7.26808 3.12227 7.52843 2.86192Z" fill="currentColor"/>
+                    </svg>
+                </a>
+              </div>
+            </article>
+          </li>
+          <li class="codepen__item">
+            <article class="codepenitem__article">
+              <div class="codepenitem__image">
+                <img src="img-flex-layout.png" width="360" height="320" alt="Flexible card layout"/>
+              </div>
+              <div class="codepenitem__info">
+                <h3 class="codepenitem__title text-h6">Flexible Card Layout</h3>
+                <p class="codepenitem__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu lectus, dictum a volutpat eu, laoreet ut augue. Nam et mauris ut ligula ultrices congue sit amet eu magna.</p>
+                <a class="codepenitem__link link" href="https://codepen.io/paulinecat/pen/LYarjQL" target="_blank">
+                  <span class="link__label">
+                    View pen
+                  </span>
+                  <span class="link__icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.52843 2.86192C7.78878 2.60157 8.21089 2.60157 8.47124 2.86192L13.1379 7.52858C13.3983 7.78893 13.3983 8.21104 13.1379 8.47139L8.47124 13.1381C8.21089 13.3984 7.78878 13.3984 7.52843 13.1381C7.26808 12.8777 7.26808 12.4556 7.52843 12.1953L11.057 8.66666H3.33317C2.96498 8.66666 2.6665 8.36818 2.6665 7.99999C2.6665 7.6318 2.96498 7.33332 3.33317 7.33332H11.057L7.52843 3.80473C7.26808 3.54438 7.26808 3.12227 7.52843 2.86192Z" fill="currentColor"/>
+                    </svg>
+                </a>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </section>
     <div class="scroll__wrapper">
